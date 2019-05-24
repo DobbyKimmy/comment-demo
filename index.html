@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>从使用LeanCloud开发评论功能理解MVC</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .message{
+            text-align: center;
+            width: 700px;
+            margin: 0 auto;
+            background: #eeeeee;
+            font-family: 'Dancing Script', cursive;
+        }
+        .message > h1{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        label{font-weight: bold}
+        ul{list-style: none;text-align: left;}
+        ul>li{
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Permanent Marker', cursive;
+            font-size: 20px;
+            border-bottom: 1px solid #9A9DA2;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        form{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background: #c7c5c9;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="message">
+    <h1>Comment</h1>
+    <hr>
+    <ul class="messageList"></ul>
+    <form action="">
+        <label for="">name</label>
+        <input type="text" name="name">
+        <label for="">comment</label>
+        <input type="text" name="comment">
+        <input type="submit" value="submit">
+    </form>
+</div>
+<!--我选择了在线引入script标签-->
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
